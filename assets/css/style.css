@@ -19311,7 +19311,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(34, 34, 34, 0.9);
+  background: rgba(34, 34, 34, 0.7);
 }
 
 .dz-bnr-inr.style-1 h1,
@@ -19894,7 +19894,7 @@ footer .dz-meta ul li a {
   color: #fff;
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  color: var(--yellow);
+  /* color: var(--yellow); */
 }
 
 .site-footer.style-2 .footer-bottom .copyright-text {
@@ -24513,7 +24513,7 @@ button:focus {
   border-radius: 50px;
   height: 30px;
   line-height: 30px;
-  background-color: var(--primary);
+  background-color: transparent;
 }
 
 /* .btn-prev-long::after,
@@ -24525,8 +24525,8 @@ button:focus {
 
 .btn-prev-long:hover:not(.swiper-button-disabled) i,
 .btn-next-long:hover:not(.swiper-button-disabled) i {
-  /* color: var(--primary); */
-  color: #ffffff;
+  color: var(--yellow);
+  
 }
 
 .btn-prev-long:hover:not(.swiper-button-disabled)::after,
@@ -30022,24 +30022,90 @@ ul a.rsswidget:hover {
   color: #fff;
 }
 
-.testimonial-two-swiper .btn-prev ,
-.testimonial-two-swiper .btn-next {
+.testimonial .btn-prev-long::before ,
+.testimonial .btn-next-long::before,
+.blog .btn-prev-long::before,
+.blog .btn-next-long::before
+ {
   background: transparent;
   box-shadow: none;
 }
 
-.testimonial-two-swiper .btn-next{
-  right: 0;
-}
-.testimonial-two-swiper .btn-prev{
-  left: 0;
+.testimonial .btn-prev-long:hover:not(.swiper-button-disabled)::before, 
+.testimonial .btn-next-long:hover:not(.swiper-button-disabled)::before,
+.blog .btn-prev-long:hover:not(.swiper-button-disabled)::before, 
+.blog .btn-next-long:hover:not(.swiper-button-disabled)::before,
+.menu-item-style .btn-next-long:hover:not(.swiper-button-disabled)::before,
+.menu-item-style .btn-prev-long:hover:not(.swiper-button-disabled)::before
+{
+  border: 2px dashed var(--red);
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  animation: dzRotate360 10s linear infinite;
 }
 
-.testimonial-two-swiper .btn-prev i,
-.testimonial-two-swiper .btn-next i{
-  color: #fff;
-  font-size: 20px;
+.menu-item-style.sme_bg_red .btn-next-long:hover:not(.swiper-button-disabled)::before,
+.menu-item-style.sme_bg_red .btn-prev-long:hover:not(.swiper-button-disabled)::before
+{
+  border: 2px dashed var(--yellow);
 }
+
+
+
+
+
+@media (max-width: 1280px){
+  .testimonial .btn-prev-long i ,
+  .testimonial .btn-next-long i {
+    position: absolute;
+    bottom: -35px;
+  }
+  .testimonial .btn-prev-long i{
+    left: 2.5px;
+  }
+  .testimonial .btn-next-long i{
+    right: 2.5px;
+  }
+  .testimonial .btn-prev-long:hover:not(.swiper-button-disabled)::before, 
+  .testimonial .btn-next-long:hover:not(.swiper-button-disabled)::before {
+    bottom: -50px;
+  }
+}
+
+
+.testimonial .btn-prev-long:hover:not(.swiper-button-disabled) i, 
+.testimonial .btn-next-long:hover:not(.swiper-button-disabled) i,
+.blog .btn-prev-long:hover:not(.swiper-button-disabled) i, 
+.blog .btn-next-long:hover:not(.swiper-button-disabled) i,
+.menu-item-style .btn-next-long:hover:not(.swiper-button-disabled) i,
+.menu-item-style .btn-prev-long:hover:not(.swiper-button-disabled) i
+
+ {
+  color: var(--red);
+}
+
+
+.menu-item-style.sme_bg_red .btn-next-long:hover:not(.swiper-button-disabled) i,
+.menu-item-style.sme_bg_red .btn-prev-long:hover:not(.swiper-button-disabled) i
+
+ {
+  color: var(--yellow);
+}
+
+
+
+.testimonial .btn-prev-long i,
+.testimonial .btn-next-long i, 
+.blog .btn-prev-long i,
+.blog .btn-next-long i
+{
+  color: var(--red);
+}
+
+
+
 
 
 .dz-card.blog-card{
@@ -37139,6 +37205,45 @@ pre {
 
 .text-lemon{
   color: var(--lemon);
+}
+
+.menu-item-style{
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.menu-item-style .dz-img-box.style-7{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: none;
+}
+
+.menu-item-style .dz-content{
+  background: #ddd;
+  padding: 15px!important;
+}
+
+.menu-item-style .dz-content .title{
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.menu-item-style .dz-img-box.style-7:hover{
+ transform: none;
+}
+
+.menu-item-style h2.title{
+  font-size: 25px;
+}
+
+.menu-item-style .btn-prev-long i,
+.menu-item-style .btn-next-long i{
+  color: var(--red);
+}
+
+.menu-item-style.sme_bg_red .btn-prev-long i, 
+.menu-item-style.sme_bg_red .btn-next-long i{
+  color: var(--yellow);
 }
 
 
