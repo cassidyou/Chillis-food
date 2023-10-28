@@ -8850,7 +8850,7 @@ fieldset:disabled .wp-block-button__link {
 }
 
 .justify-content-start {
-  justify-content: flex-end !important;
+  justify-content: flex-start !important;
 }
 
 .justify-content-end {
@@ -35415,7 +35415,11 @@ pre {
   display: flex;
   align-items: center;
   min-height: 700px;
+  max-height: 100vh;
+  background-repeat:no-repeat;    
+  background-size: cover;
 }
+
 
 .error-page .particles-js-canvas-el {
   position: absolute;
@@ -37248,6 +37252,85 @@ pre {
 .menu-item-style.sme_bg_red .btn-prev-long i, 
 .menu-item-style.sme_bg_red .btn-next-long i{
   color: var(--yellow);
+}
+
+
+.branch-filter,
+.branch-details{
+  box-shadow: var(--bs-box-shadow-lg);
+}
+
+
+.branch-details table{
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.branches .section-head .title{
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.branches .section-head{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+ }
+
+ .branch-details table td{
+  font-size: 15px;
+}
+
+.branch-filter .site-filters.style-1 ul li a{
+ font-weight: bold;
+}
+
+
+
+
+
+@media (max-width: 425px){
+  .branches .section-head .title{
+    font-size: 20px;
+  }
+
+  .branches .section-head{
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+  }
+
+  .branch-details table td{
+    font-size: 12px;
+  }
+}
+
+
+.faq-accordion .accordion-item{
+  border: none;
+  margin-left: .75rem;
+  margin-right: .75rem;
+}
+
+.faq-accordion .accordion-item .accordion-body{
+  background: #a5cc3b4a;
+  margin-bottom: 10px;
+  padding: 15px!important;
+  margin-top: -10px;
+}
+
+.faq-accordion .accordion-item .accordion-header
+{
+  background: #a5cc3b82;
+  margin-bottom: 10px;
+  padding: 10px!important;
+}
+
+.faq-accordion .accordion-header .accordion-button:not(.collapsed){
+  background: transparent;
+}
+
+.faq-accordion .accordion-header .accordion-button {
+  font-size: 16px!important;
+  padding: 10px 30px 10px 10px!important;
 }
 
 
