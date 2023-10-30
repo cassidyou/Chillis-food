@@ -37,6 +37,7 @@
 	<link rel="stylesheet" href="assets/vendor/slick/slick.css">
 	<link rel="stylesheet" href="assets/vendor/slick/slick-theme.css">
 
+
 	<!-- Custom Stylesheet -->
 	<link rel="stylesheet" href="assets/vendor/rangeslider/rangeslider.css">
 	<link rel="stylesheet" href="assets/vendor/switcher/switcher.css">
@@ -48,6 +49,8 @@
 	<link
 		href="../../fonts.googleapis.com/css21aea.css?family=Lobster&amp;family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
 		rel="stylesheet">
+
+		
 
 </head>
 
@@ -128,11 +131,20 @@
 		<div class="page-content bg-white">
 			<!-- Banner -->
 			<div id="banner_area">
-				<div class="banner-slider">
-					<div class="slides"
-						style="background-image: url('assets/images/banner/bnr2.jpg');"></div>
-					<div class="slides" style="background-image: url('assets/images/banner/bnr3.jpg');"></div>
+				<div class="swiper banner-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slide" style="background-image: url('assets/images/banner/bnr2.jpg');"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide" style="background-image: url('assets/images/banner/bnr3.jpg');"></div>
+						</div>
+					</div>
 				</div>
+				<!-- <div class="banner-slider">
+					<div class="slides"	style="background-image: url('assets/images/banner/bnr2.jpg');"></div>
+					<div class="slides" style="background-image: url('assets/images/banner/bnr3.jpg');"></div>
+				</div> -->
 			</div>
 			<!-- Banner -->
 
@@ -574,7 +586,7 @@
 					<div class="row cfn_y">
 						<div class="col-md-6 order-md-2">
 							<a href="javascript:;">
-								<img src="assets/images/background/bg1.jpg" class="img-fluid" alt="">
+								<img src="assets/images/background/bg1.jpg" class="img-fluid h-100" alt="">
 							</a>
 						</div>
 						<div class="col-md-6  order-md-1">
@@ -583,7 +595,7 @@
 								<p class="cf_nyt">
 									We have our restaurants located in different parts of the country.
 								</p>
-							</a>
+								<a href="branches.html" class="btn btn-primary btn-hover-2"><span>Branch Locator</span></a>							</a>
 						</div>
 					</div>
 				</div>
@@ -591,13 +603,14 @@
 			<!-- Shop Location End  -->
 		</div>
 
+
 		<!--Footer-->
 		<footer class="site-footer style-2" id="footer">
 			<div class="footer-bg-wrapper" id="app-banner">
 				<div class="footer-top">
 					<div class="container">
 						<div class="row">
-							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 fadeInUp" data-wow-delay="0.4s">
 								<div class="widget widget_getintuch">
 									<h5 class="footer-title" style="margin-bottom: 10px!important;">
 										<img src="assets/images/logo.png" width="100px" alt="">
@@ -633,7 +646,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 fadeInUp" data-wow-delay="0.4s">
 								<div class="widget widget_services">
 									<h5 class="footer-title">Contact us</h5>
 									<ul>
@@ -700,17 +713,23 @@
 	<script src="assets/vendor/slick/slick.min.js"></script>
 	<script>
 		jQuery(document).ready(function () {
-			dzSettingsOptions.themeFullColor_value = 'color_3';
-			new dzSettings(dzSettingsOptions);
+			
+			if ($(".banner-swiper").length > 0) {
 
-			$('.banner-slider').slick({
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				autoplay: true,
-				autoplaySpeed: 3000,
-				dots: false,
-				arrows: false,
-			});
+				var t = new Swiper(".banner-swiper",
+					{
+						spaceBetween: 0,
+						speed: 5e3,
+						loop: !0,
+						centeredSlides: !1,
+						centerInsufficientSlides: !0,
+						freeMode: !0,
+						watchSlidesVisibility: !0,
+						autoplay: { delay: 4e3 },
+						navigation: { nextEl: ".menu-button-next1", prevEl: ".menu-button-prev1" },
+						
+					});
+			}
 
 		});
 	</script>
