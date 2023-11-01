@@ -37570,11 +37570,15 @@ video{
   text-transform: capitalize;
   color: #fff;
   margin-top: 20px;
+  text-align: center;
 }
 
 @media (max-width: 1024px){
   .banner__sme{
     width: 70vw;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -60%);
   }
 }
 
