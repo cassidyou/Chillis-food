@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon_swigo";
     src: url("flaticon_swigo1845.ttf?64497de560921368cd586e6c5ea1ea6e") format("truetype"),
-url("flaticon_swigo1845.woff?64497de560921368cd586e6c5ea1ea6e") format("woff"),
-url("flaticon_swigo1845.woff2?64497de560921368cd586e6c5ea1ea6e") format("woff2"),
-url("flaticon_swigo1845.eot?64497de560921368cd586e6c5ea1ea6e#iefix") format("embedded-opentype"),
-url("flaticon_swigo1845.svg?64497de560921368cd586e6c5ea1ea6e#flaticon_swigo") format("svg");
+    url("flaticon_swigo1845.woff?64497de560921368cd586e6c5ea1ea6e") format("woff"),
+    url("flaticon_swigo1845.woff2?64497de560921368cd586e6c5ea1ea6e") format("woff2"),
+    url("flaticon_swigo1845.eot?64497de560921368cd586e6c5ea1ea6e#iefix") format("embedded-opentype"),
+    url("flaticon_swigo1845.svg?64497de560921368cd586e6c5ea1ea6e#flaticon_swigo") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
