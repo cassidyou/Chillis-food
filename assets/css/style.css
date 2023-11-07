@@ -37725,7 +37725,7 @@ video{
 }
 
 @media (max-width: 1024px){
-  .menu-item-one-swiper .dz-img-box.style-7 .dz-media
+  .menu-item-one-swiper .dz-img-box.style-7 .dz-media,
   .menu-item-two-swiper .dz-img-box.style-7 .dz-media,
   .menu-item-three-swiper .dz-img-box.style-7 .dz-media,
   .menu-item-four-swiper .dz-img-box.style-7 .dz-media,
@@ -37739,7 +37739,7 @@ video{
 }
 
 @media (max-width: 991px){
-  .menu-item-one-swiper .dz-img-box.style-7 .dz-media
+  .menu-item-one-swiper .dz-img-box.style-7 .dz-media,
   .menu-item-two-swiper .dz-img-box.style-7 .dz-media,
   .menu-item-three-swiper .dz-img-box.style-7 .dz-media,
   .menu-item-four-swiper .dz-img-box.style-7 .dz-media,
