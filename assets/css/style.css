@@ -380,6 +380,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth!important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -388,6 +389,9 @@
   }
 }
 
+html{
+  scroll-behavior: smooth!important;
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -400,6 +404,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   overflow-x: hidden!important;
+  scroll-behavior: smooth!important;
 }
 
 hr {
@@ -37763,4 +37768,8 @@ video{
   text-shadow: 2px 2px 5px #000000!important;
 }
 
+
+.dz-img-box.style-7 .dz-content .title{
+  text-transform: capitalize;
+}
 
